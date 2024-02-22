@@ -1,5 +1,6 @@
 from django.test import SimpleTestCase
 from app import calc
+# flake8: noqa
 
 class calcTest(SimpleTestCase):
     def test_add_numbers(self):

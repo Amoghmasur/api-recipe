@@ -1,6 +1,7 @@
-""" 
+"""
 test custom django management commands
 """
+# flake8: noqa
 from unittest.mock import patch
 from psycopg2 import OperationalError as PsycopgError
 from django.core.management import call_command

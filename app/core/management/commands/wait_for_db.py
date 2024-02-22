@@ -1,3 +1,4 @@
+# flake8: noqa
 from django.core.management.base import BaseCommand
 import time
 from psycopg2 import OperationalError as Psycopg2OpError

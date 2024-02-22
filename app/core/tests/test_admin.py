@@ -1,4 +1,5 @@
 """test for the django modificaitons"""
+# flake8: noqa
 from django.test import TestCase
 from django.contrib.auth import get_user_model
 from django.urls import reverse

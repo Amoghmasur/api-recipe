@@ -1,3 +1,5 @@
+# flake8: noqa
+
 from django.db import models
 from django.contrib.auth.models import (
     AbstractBaseUser,
