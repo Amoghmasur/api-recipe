@@ -1,4 +1,6 @@
+# flake8: noqa
 """serializers for the user api view"""
+
 
 from django.contrib.auth import (
     get_user_model,

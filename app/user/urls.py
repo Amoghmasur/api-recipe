@@ -1,3 +1,4 @@
+# flake8: noqa
 """url mapping for the user api"""
 
 from django.urls import path

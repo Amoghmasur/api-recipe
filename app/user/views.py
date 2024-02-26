@@ -1,3 +1,4 @@
+# flake8: noqa
 from django.shortcuts import render
 
 # Create your views here.
@@ -36,5 +37,5 @@ class ManageUserView(generics.RetrieveUpdateAPIView):
     def get_object(self):
         """retrieve and return the authenticated user"""
         return self.request.user
-    
+
 

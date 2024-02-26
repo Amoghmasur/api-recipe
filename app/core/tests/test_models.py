@@ -3,6 +3,8 @@ test for models
 """
 # flake8: noqa
 
+from decimal import Decimal
+from core import models
 from django.test import TestCase
 from django.contrib.auth import get_user_model
 
@@ -46,3 +48,20 @@ class modeltest(TestCase):
 
         self.assertTrue(user.is_superuser)
         self.assertTrue(user.is_staff)
+
+    def test_create_recipe(self):
+        """test creating a recipe is successful"""
+        user=get_user_model().objects.create_user(
+            'test@example.com',
+            'testpass123',
+        )
+        recipe=models.Recipe.objects.create(
+            user=user,
+            title='sample recipe name',
+            time_minutes=5,
+            price=Decimal('5.50'),
+            description='sample recipe description',
+        )
+
+        self.assertEqual(str(recipe),recipe.title)
+
